@@ -762,7 +762,7 @@ namespace platf {
         if (window_system == window_system_e::WAYLAND) {
           // On Wayland, using KMS, the cursor is unreliable.
           // Hide it by default
-          display_cursor = false;
+          display_cursor = true;
         }
         sources[source::KMS] = true;
       }
